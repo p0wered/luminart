@@ -2,6 +2,10 @@ import {Link} from "react-router";
 import Pic1 from '../assets/pic-1.png'
 import Pic2 from '../assets/pic-2.png'
 import Pic3 from '../assets/pic-3.png'
+import Collection1 from '../assets/collection-1.png'
+import Collection2 from '../assets/collection-2.png'
+import Collection3 from '../assets/collection-3.png'
+import Collection4 from '../assets/collection-4.png'
 import Arrow from "../icons/Arrow.tsx";
 
 export default function Home(){
@@ -69,6 +73,22 @@ export default function Home(){
                 <div className='separator'/>
                 <div className='module module-3'>
                     <h3>GET 10% DISCOUNT</h3>
+                </div>
+            </div>
+            <div className='collections-section'>
+                <div className='title-box'>
+                    <h3>MAKE YOUR SPACE WITH CAPTIVATE DESIGN</h3>
+                    <p>See our newest collection of furniture</p>
+                </div>
+                <div className='collections-list'>
+                    <div className='item' id='item-1' style={{backgroundImage: `url(${Collection1})`}}>
+                    </div>
+                    <div className='item' id='item-2' style={{backgroundImage: `url(${Collection2})`}}>
+                    </div>
+                    <div className='item' id='item-3' style={{backgroundImage: `url(${Collection3})`}}>
+                    </div>
+                    <div className='item' id='item-4' style={{backgroundImage: `url(${Collection4})`}}>
+                    </div>
                 </div>
             </div>
         </div>
