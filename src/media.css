@@ -1,3 +1,89 @@
 @media screen and (max-width: 1280px) {
+    .collections-section .collections-list{
+        max-width: 786px;
+    }
 
+    .collections-section .collections-list .inner{
+        flex-direction: column;
+    }
+
+    .collections-section .collections-list #item-2{
+        height: calc(300px + 10vw);
+        max-height: 463px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    p, a{
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: calc(32px + 3.4vw);
+        line-height: 1;
+    }
+
+    h2{
+        font-size: 32px;
+        line-height: 1;
+    }
+
+    h3{
+        font-size: 24px;
+        line-height: 1;
+    }
+
+    h4{
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    header .desktop-links{
+        display: none;
+    }
+
+    header .desktop-icons{
+        display: none;
+    }
+
+    .title-section {
+        flex-direction: column;
+        height: unset;
+    }
+
+    .title-section .separator{
+        height: 1rem;
+        width: 100%;
+    }
+
+    .title-section .module{
+        padding: 1rem;
+    }
+
+    .title-section .module-1{
+        gap: 4rem;
+    }
+
+    .title-section .module-1, .module-2, .module-3{
+        width: 100% !important;
+    }
+
+    .title-section .blur-block p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    .collections-section .title-box p{
+        font-size: 18px;
+    }
+
+    .collections-section .collections-list{
+        flex-direction: column;
+        max-width: 586px;
+    }
+
+    .collections-section .collections-list #item-1, #item-2, #item-3, #item-4{
+        height: 323px !important;
+    }
 }

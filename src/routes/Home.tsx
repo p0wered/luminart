@@ -81,13 +81,17 @@ export default function Home(){
                     <p>See our newest collection of furniture</p>
                 </div>
                 <div className='collections-list'>
-                    <div className='item' id='item-1' style={{backgroundImage: `url(${Collection1})`}}>
+                    <div className='inner'>
+                        <div className='item' id='item-1' style={{backgroundImage: `url(${Collection1})`}}>
+                        </div>
+                        <div className='item' id='item-2' style={{backgroundImage: `url(${Collection2})`}}>
+                        </div>
                     </div>
-                    <div className='item' id='item-2' style={{backgroundImage: `url(${Collection2})`}}>
-                    </div>
-                    <div className='item' id='item-3' style={{backgroundImage: `url(${Collection3})`}}>
-                    </div>
-                    <div className='item' id='item-4' style={{backgroundImage: `url(${Collection4})`}}>
+                    <div className='inner'>
+                        <div className='item' id='item-3' style={{backgroundImage: `url(${Collection3})`}}>
+                        </div>
+                        <div className='item' id='item-4' style={{backgroundImage: `url(${Collection4})`}}>
+                        </div>
                     </div>
                 </div>
             </div>

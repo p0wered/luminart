@@ -161,6 +161,7 @@ textarea:focus, input:focus{
 header{
   position: fixed;
   width: 100%;
+  z-index: 999;
 }
 
 header .layout{
@@ -366,6 +367,7 @@ header .desktop-icons a img{
 
 .collections-section .title-box p{
   color: var(--content-neutral);
+  font-size: 24px;
 }
 
 .collections-section .collections-list{
@@ -382,6 +384,12 @@ header .desktop-icons a img{
   background-size: cover;
   background-position: center;
   border-radius: 24px;
+  width: 100%;
+}
+
+.collections-section .collections-list .inner{
+  display: flex;
+  gap: 1rem;
   width: 100%;
 }
 
