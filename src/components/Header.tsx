@@ -24,8 +24,9 @@ export default function Header() {
                             <img src={PfpImage} alt="pfp"/>
                         </Link>
                     </div>
+                    <i className="bi bi-list"></i>
                 </div>
             </div>
         </header>
-    );
+    )
 }

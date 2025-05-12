@@ -1,6 +1,28 @@
+@media screen and (max-width: 1520px) {
+    h1{
+        font-size: calc(40px + 3.4vw);
+        line-height: 1;
+    }
+
+    h2{
+        font-size: 46px;
+        line-height: 1;
+    }
+
+    h3{
+        font-size: 28px;
+        line-height: 1;
+    }
+
+    h4{
+        font-size: 23px;
+        font-weight: 600;
+    }
+}
+
 @media screen and (max-width: 1280px) {
-    .collections-section .collections-list{
-        max-width: 786px;
+    .container{
+        max-width: 960px;
     }
 
     .collections-section .collections-list .inner{
@@ -38,12 +60,22 @@
         font-weight: 600;
     }
 
+    /* Header */
+
     header .desktop-links{
         display: none;
     }
 
     header .desktop-icons{
         display: none;
+    }
+
+    header .bi-list{
+        display: block;
+    }
+
+    header .layout{
+        padding: 0.5rem 1rem 0.5rem 1.5rem;
     }
 
     .title-section {
@@ -74,13 +106,34 @@
 }
 
 @media screen and (max-width: 786px) {
+    .header-margin{
+        height: 70px;
+    }
+
+    .container{
+        padding: 0 .5rem;
+        max-width: 586px;
+    }
+
+    .container-lg {
+        padding: 0 .5rem;
+    }
+
+    .collections-section{
+        padding: 5rem 0 3.25rem 0;
+    }
+
     .collections-section .title-box p{
         font-size: 18px;
     }
 
     .collections-section .collections-list{
         flex-direction: column;
-        max-width: 586px;
+        gap: 1rem;
+    }
+
+    .collections-section .collections-list .inner{
+        gap: 1rem;
     }
 
     .collections-section .collections-list #item-1, #item-2, #item-3, #item-4{

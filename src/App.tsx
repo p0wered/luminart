@@ -7,7 +7,7 @@ export default function App() {
     return (
         <>
             <Header/>
-            <div style={{height: 82}}/>
+            <div className='header-margin'/>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
