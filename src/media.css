@@ -33,6 +33,23 @@
         height: calc(300px + 10vw);
         max-height: 463px;
     }
+
+    .faq-block .faq-item p{
+        font-size: 20px;
+    }
+
+    .faq-block .faq-item .first-inner .title{
+        font-size: 20px;
+    }
+
+    .faq-block .faq-item{
+        gap: .5rem;
+        padding: 1rem 0;
+    }
+
+    .faq-block .faq-item .first-inner .button p{
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -101,6 +118,15 @@
     }
 
     .title-section .blur-block p{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 800px) and (min-width: 786px){
+    .title-section{
+        height: calc(100vh - 92px);
+    }
+    .title-section .blur-block{
         display: none;
     }
 }

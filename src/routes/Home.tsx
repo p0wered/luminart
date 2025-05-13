@@ -7,8 +7,10 @@ import Collection2 from '../assets/collection-2.png';
 import Collection3 from '../assets/collection-3.png';
 import Collection4 from '../assets/collection-4.png';
 import AboutBg from '../assets/about-bg.png';
+import FaqFirst from '../assets/faq-first.png';
 import ChevronRight from "../icons/ChevronRight.tsx";
 import ArrowRight from "../icons/ArrowRight.tsx";
+import FaqItem from "../components/FaqItem.tsx";
 
 export default function Home(){
     return(
@@ -58,19 +60,19 @@ export default function Home(){
                         <div className='dot'/>
                         <div className='link'>
                             <Link to='/'>HOME DECOR</Link>
-                            <ChevronRight/>
+                            <ChevronRight size='16px' color='white'/>
                         </div>
                         <div className='link'>
                             <Link to='/'>SOFAS</Link>
-                            <ChevronRight/>
+                            <ChevronRight size='16px' color='white'/>
                         </div>
                         <div className='link'>
                             <Link to='/'>LAMPS</Link>
-                            <ChevronRight/>
+                            <ChevronRight size='16px' color='white'/>
                         </div>
                         <div className='link'>
                             <Link to='/'>OTHER</Link>
-                            <ChevronRight/>
+                            <ChevronRight size='16px' color='white'/>
                         </div>
                     </div>
                     <div className='separator'/>
@@ -84,7 +86,7 @@ export default function Home(){
             <div className='container'>
                 <div className='collections-section'>
                     <div className='title-box'>
-                        <h3>Make your space with captivate design</h3>
+                        <h3 style={{textTransform: 'uppercase'}}>Make your space with captivate design</h3>
                         <p>See our newest collection of furniture</p>
                     </div>
                     <div className='collections-list'>
@@ -104,7 +106,7 @@ export default function Home(){
                 <div className='about-section'>
                     <div className='at-luminart'>
                         <div className='arrow-box'>
-                            <ArrowRight/>
+                            <ArrowRight color='#9a9a9a'/>
                         </div>
                         <p>AT LUMINART</p>
                     </div>
@@ -117,15 +119,20 @@ export default function Home(){
                             <img src={AboutBg} alt="about"/>
                         </div>
                         <div className='faq-block'>
-                            <div className='faq-item'>
+                            <div className='faq-item first-item'>
                                 <div className='first-inner'>
-                                    <p><span>01</span> Personal design for you</p>
+                                    <p className='title'><span>01</span> Personal design for you</p>
                                     <div className='button'>
                                         <p>Video</p>
-                                        <ArrowRight/>
+                                        <ArrowRight color='black'/>
                                     </div>
                                 </div>
+                                <img src={FaqFirst} alt="first-item"/>
                             </div>
+                            <FaqItem count='02' title='How our furniture made?'/>
+                            <FaqItem count='03' title='Can I customize my furniture?'/>
+                            <FaqItem count='04' title='What yout return policy?'/>
+                            <FaqItem count='05' title='Do you have any dealers?'/>
                         </div>
                     </div>
                 </div>
